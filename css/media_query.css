@@ -1,0 +1,69 @@
+@media (min-width: 992px) {
+    .dropdown-submenu {
+        position: relative;
+    }
+    .dropdown-submenu .dropdown-menu {
+        position: absolute;
+        right: 100%;
+        top: 0;
+        display: none;
+        width: 100%;
+    }
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+}
+@media (max-width: 991px) {
+    .dropdown-menu {
+        width: 100%;
+        position: static;
+    }
+    .dropdown-submenu .dropdown-menu {
+        position: relative;
+        width: 100%;
+        display: none;
+    }
+    .dropdown-menu.collapse {
+        display: none;
+    }
+    .dropdown-menu.show {
+        display: block;
+    }
+    .testimonials .description{
+        padding: 0;
+    }
+    .navbar-collapse.show {
+        background: white;
+        padding: 10px; 
+        max-width: 100%; 
+        overflow-y: auto; 
+        max-height: 80vh;
+    }
+}
+@media (max-width: 768px){
+    header h1{
+        font-size: 3rem;
+    }
+    .achievements{
+        background-size: cover;
+    }
+    .get{
+        padding-top: 20px;
+    }
+} 
+@media (max-width: 576px) {
+    .card-body .row {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .card-body .col-sm-8 {
+        width: 50%;
+    }
+    .card-body .col-sm-4 {
+        width: 50%;
+    }
+    .testimonials .description{
+        padding: 0;
+    }
+}
